@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1078902277894",
+    "project_id": "sports-news-app-b294f",
+    "storage_bucket": "sports-news-app-b294f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078902277894:android:61f43b378c80a95d79c087",
+        "android_client_info": {
+          "package_name": "com.example.sports_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7btw6-g2NV0rR3Z9ge4XYZJbWnWF-Oo8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
