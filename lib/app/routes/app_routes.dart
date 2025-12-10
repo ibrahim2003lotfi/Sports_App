@@ -9,4 +9,7 @@ abstract class Routes {
 
   static const ADMIN_DASHBOARD = '/admin-dashboard';
   static const SUPER_ADMIN_DASHBOARD = '/super-admin-dashboard';
+
+  static const ADD_NEWS = '/add-news';
+  static const NEWS_FEED = '/news-feed';
 }

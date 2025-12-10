@@ -10,6 +10,10 @@ class LoginView extends GetView<LoginController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text(" أبو طارق و أبو وسيم للأخبار الرياضية"),
+      ),
+
       body: Padding(
         padding: const EdgeInsets.all(20),
         child: Center(
@@ -18,19 +22,35 @@ class LoginView extends GetView<LoginController> {
               children: [
                 const Text(
                   "تسجيل الدخول",
-                  style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                    fontSize: 28,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xff0D47A1),
+                  ),
                 ),
-                const SizedBox(height: 30),
+                const SizedBox(height: 20),
+
+                // كرة قدم صغيرة كستايل
+                const Icon(
+                  Icons.sports_soccer,
+                  size: 60,
+                  color: Color(0xff0D47A1),
+                ),
+
+                const SizedBox(height: 35),
+
                 CustomInput(
                   label: "البريد الإلكتروني",
                   onChanged: (v) => controller.email.value = v,
                 ),
                 const SizedBox(height: 15),
+
                 CustomInput(
                   label: "كلمة المرور",
                   isPassword: true,
                   onChanged: (v) => controller.password.value = v,
                 ),
+
                 const SizedBox(height: 25),
                 Obx(() {
                   return controller.isLoading.value
@@ -40,15 +60,14 @@ class LoginView extends GetView<LoginController> {
                           onPressed: controller.login,
                         );
                 }),
+
                 TextButton(
                   onPressed: controller.forgotPassword,
                   child: const Text("نسيت كلمة المرور؟"),
                 ),
+
                 TextButton(
-                  onPressed: () {
-                    Get.toNamed(
-                        '/signup'); // أو Routes.SIGNUP حسب ملف الراوتس عندك
-                  },
+                  onPressed: () => Get.toNamed('/signup'),
                   child: const Text("إنشاء حساب جديد"),
                 ),
               ],

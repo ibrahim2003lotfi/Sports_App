@@ -27,8 +27,19 @@ class MyApp extends StatelessWidget {
       initialRoute: Routes.SPLASH, // أول صفحة بدنا ياها
       getPages: AppPages.routes, // جميع الراوتات من ملف app_pages.dart
       theme: ThemeData(
+        primaryColor: const Color(0xff0D47A1),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xff0D47A1),
+          primary: const Color(0xff0D47A1),
+          secondary: const Color(0xffFFC107),
+        ),
+        scaffoldBackgroundColor: const Color(0xfff3f5f7),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xff0D47A1),
+          foregroundColor: Colors.white,
+          centerTitle: true,
+        ),
         fontFamily: "Cairo",
-        scaffoldBackgroundColor: Colors.white,
       ),
     );
   }
